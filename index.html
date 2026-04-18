@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Honeypot Dashboard</title>
+</head>
+
+<body>
+
+<h2>Login Attempts</h2>
+
+<table border="1">
+
+<tr>
+<th>ID</th>
+<th>Username</th>
+<th>Password</th>
+<th>IP</th>
+<th>Time</th>
+</tr>
+
+{% for r in rows %}
+<tr>
+<td>{{r[0]}}</td>
+<td>{{r[1]}}</td>
+<td>{{r[2]}}</td>
+<td>{{r[3]}}</td>
+<td>{{r[4]}}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>
